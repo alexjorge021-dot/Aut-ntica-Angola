@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUTENTIKA ANGOLA — Documentos, legalização e assessoria em Luanda</title>
+<meta name="description" content="Emissão e legalização de documentos, assessoria migratória, relações públicas e apoio documental para empresas. Peça assistência pelo WhatsApp.">
+<meta property="og:title" content="AUTENTIKA ANGOLA">
+<meta property="og:description" content="Os seus documentos e processos, com orientação especializada.">
+<meta property="og:type" content="website">
+<!-- LOGÓTIPO (partilha): troque pelo endereço final da imagem -->
+<meta property="og:image" content="logo-autentika.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1738;--blue:#123B70;--accent:#245DFF;--gold:#C5A04B;--ink:#16213f;--mute:#56607a;--bg:#f6f8fc;--r:14px;
+--serif:"Newsreader",Georgia,serif;--sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.6;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+section{padding:84px 0}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;color:var(--navy);font-weight:600}
+h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:14px}
+.lead{color:var(--mute);max-width:62ch;margin-bottom:38px}
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;font:600 .95rem var(--sans);padding:13px 22px;border-radius:999px;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s;min-height:46px}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 8px 22px -8px rgba(197,160,75,.8)}
+.btn-gold:hover{box-shadow:0 12px 26px -8px rgba(197,160,75,.95)}
+.btn-blue{background:var(--accent);color:#fff}
+.btn-line{background:transparent;color:inherit;border:1.5px solid currentColor}
+.btn-wa{background:#128C4A;color:#fff}
+.btn-sm{padding:9px 16px;min-height:40px;font-size:.88rem}
+/* cabeçalho */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);transition:box-shadow .3s,padding .3s}
+header.scrolled{box-shadow:0 6px 24px -12px rgba(11,23,56,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;color:var(--navy)}
+/* LOGÓTIPO: substitua o ficheiro assets/logo.jpg (ou altere CONFIG.logo no JavaScript) */
+.brand img{height:54px;width:54px;object-fit:cover;object-position:center 42%;border-radius:8px}
+nav ul{display:flex;gap:24px;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink)}
+nav a:hover{color:var(--accent)}
+.burger{display:none;background:none;border:1.5px solid #cdd5e6;border-radius:10px;width:46px;height:46px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--navy);margin:5px auto;transition:.3s}
+/* hero */
+.hero{background:radial-gradient(1200px 500px at 85% 0,#1b4a8c 0,transparent 60%),linear-gradient(160deg,var(--navy),var(--blue));color:#fff;padding:96px 0 110px;position:relative;overflow:hidden}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6.2vw,4rem);max-width:15ch;margin-bottom:20px}
+.hero p{max-width:56ch;color:#d5def2;font-size:1.08rem;margin-bottom:30px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-in>*{opacity:0;transform:translateY(18px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero-in>*:nth-child(2){animation-delay:.12s}.hero-in>*:nth-child(3){animation-delay:.24s}
+@keyframes up{to{opacity:1;transform:none}}
+/* momento de destaque: a linha de voo dourada desenha-se uma vez */
+.flight{position:absolute;right:-40px;bottom:0;width:min(780px,95%);opacity:.9;pointer-events:none}
+.flight path{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.6s .5s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+/* revelação no scroll */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+/* sobre */
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.about-box{background:var(--bg);border-left:4px solid var(--gold);padding:26px;border-radius:var(--r)}
+/* serviços */
+#servicos{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border-radius:var(--r);padding:26px;box-shadow:0 14px 34px -22px rgba(11,23,56,.45);display:flex;flex-direction:column;gap:12px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(11,23,56,.5)}
+.ico{width:50px;height:50px;border-radius:12px;background:linear-gradient(140deg,var(--navy),var(--accent));display:grid;place-items:center}
+.ico svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card p{color:var(--mute);flex:1;font-size:.95rem}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.card .btn-line{color:var(--blue)}
+/* trabalhos */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chip{border:1.5px solid #cdd5e6;background:#fff;border-radius:999px;padding:8px 16px;font:500 .9rem var(--sans);cursor:pointer;min-height:40px;transition:.25s}
+.chip[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.work{padding:0;overflow:hidden;animation:pop .45s ease both}
+@keyframes pop{from{opacity:0;transform:scale(.96)}}
+.work button.th{border:0;padding:0;background:#e8edf6;cursor:zoom-in;aspect-ratio:4/3;overflow:hidden}
+.work img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.work:hover img{transform:scale(1.04)}
+.work .bd{padding:18px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tag{color:var(--gold);font-weight:600;font-size:.85rem}
+.empty{background:var(--bg);border:1.5px dashed #b9c4dc;border-radius:var(--r);padding:34px;text-align:center;color:var(--mute)}
+/* faq */
+details{border-bottom:1px solid #dde3f0;padding:4px 0}
+summary{cursor:pointer;font-weight:600;padding:16px 30px 16px 0;list-style:none;position:relative;color:var(--navy)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:1.5rem;color:var(--accent);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mute);padding:0 0 18px;max-width:70ch;animation:up .4s both}
+/* contactos */
+#contactos{background:var(--navy);color:#fff}
+#contactos h2{color:#fff}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:26px 0}
+.ct div{background:rgba(255,255,255,.07);border-radius:var(--r);padding:20px}
+.ct b{display:block;color:var(--gold);margin-bottom:4px}
+.ct a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+footer{background:#07102a;color:#aab6d3;padding:40px 0 26px;font-size:.92rem}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;margin-bottom:24px}
+footer h3{color:#fff;font-family:var(--sans);font-size:1rem;margin-bottom:8px}
+footer ul{list-style:none;padding:0;display:grid;gap:6px}
+footer a{text-decoration:none}footer a:hover{color:#fff}
+/* modal do formulário */
+dialog{border:0;border-radius:18px;padding:0;width:min(600px,94vw);max-height:92vh;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
+dialog::backdrop{background:rgba(7,16,42,.7)}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--navy);color:#fff}
+.dh h3{color:#fff;font-size:1.2rem}
+.x{background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer;width:44px;height:44px}
+.bar{height:5px;background:#e3e8f3}.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .4s}
+.fb{padding:22px;overflow:auto;max-height:60vh}
+.step{animation:slide .4s both}
+@keyframes slide{from{opacity:0;transform:translateX(24px)}}
+.fld{margin-bottom:16px}
+label{display:block;font-weight:600;font-size:.92rem;margin-bottom:6px}
+.opt{color:var(--mute);font-weight:400}
+input,select,textarea{width:100%;font:inherit;padding:12px;border:1.5px solid #c5cee2;border-radius:10px;background:#fff;color:var(--ink);min-height:46px}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+.err{color:#b3261e;font-size:.85rem;margin-top:4px;min-height:1px}
+.ff{display:flex;justify-content:space-between;gap:10px;padding:16px 22px;border-top:1px solid #e3e8f3}
+.sum dt{font-weight:600;color:var(--navy);margin-top:10px;font-size:.88rem}
+.sum dd{margin:0;color:var(--mute);white-space:pre-wrap}
+.note{background:#fff7e0;border-radius:10px;padding:12px;font-size:.88rem;margin-top:16px}
+/* lightbox */
+#lb img{max-height:80vh;margin:auto;border-radius:10px}
+#lb{background:transparent;width:min(900px,94vw)}
+#lb p{color:#fff;text-align:center;margin-top:10px}
+/* responsivo */
+@media(max-width:860px){
+ section{padding:60px 0}
+ .burger{display:block}
+ nav ul{position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 4%;box-shadow:0 18px 30px -18px rgba(11,23,56,.4);display:none}
+ nav ul.open{display:flex}
+ nav li a{display:block;padding:14px 0;border-bottom:1px solid #eef1f8}
+ .hdr-wa{display:none}
+ .about{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .rv,.hero-in>*{opacity:1;transform:none}.flight path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<a href="#conteudo" class="btn btn-gold" style="position:absolute;left:-999px" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Saltar para o conteúdo</a>
+
+<header id="hdr"><div class="wrap nav">
+ <a class="brand" href="#inicio" aria-label="AUTENTIKA ANGOLA, página inicial">
+  <img id="logo" src="assets/logo.jpg" alt="Logótipo da AUTENTIKA ANGOLA" width="54" height="54"><span>AUTENTIKA ANGOLA</span>
+ </a>
+ <nav aria-label="Principal">
+  <ul id="menu">
+   <li><a href="#sobre">Sobre</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#trabalhos">Trabalhos</a></li>
+   <li><a href="#faq">Perguntas</a></li><li><a href="#contactos">Contactos</a></li>
+  </ul>
+ </nav>
+ <a class="btn btn-wa btn-sm hdr-wa" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+ <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<main id="conteudo">
+<section class="hero" id="inicio">
+ <svg class="flight" viewBox="0 0 800 300" aria-hidden="true"><path d="M0 280 C180 280 260 120 420 110 S700 60 790 10"/></svg>
+ <div class="wrap hero-in">
+  <h1>Os seus documentos e processos, com orientação especializada.</h1>
+  <p>A AUTENTIKA ANGOLA disponibiliza serviços de assessoria migratória, legalização e reconhecimento de documentos, relações públicas e apoio documental para empresas.</p>
+  <div class="cta"><a class="btn btn-gold" href="#servicos">Conhecer os serviços</a><button class="btn btn-line" data-open="">Solicitar assistência</button></div>
+ </div>
+</section>
+
+<section id="sobre"><div class="wrap about">
+ <div class="rv">
+  <h2>Sobre a empresa</h2>
+  <!-- TEXTO INSTITUCIONAL: substitua pela descrição oficial da empresa -->
+  <p class="lead" style="margin:0">A AUTENTIKA ANGOLA apoia particulares e empresas em processos documentais, de legalização, migratórios e de relações públicas, a partir de Luanda. Esta descrição é provisória e será substituída pelo texto oficial da empresa.</p>
+ </div>
+ <div class="about-box rv" style="--d:.12s"><b>Onde estamos</b><p id="aboutAddr" style="color:var(--mute)"></p></div>
+</div></section>
+
+<section id="servicos"><div class="wrap">
+ <h2 class="rv">Serviços</h2><p class="lead rv">Escolha o serviço e responda a algumas perguntas. O pedido segue para o WhatsApp oficial da empresa.</p>
+ <div class="grid" id="svcGrid"></div>
+</div></section>
+
+<section id="trabalhos"><div class="wrap">
+ <h2 class="rv">Alguns Trabalhos realizados</h2><p class="lead rv">Fotografias de trabalhos reais da empresa, organizadas por serviço.</p>
+ <div class="filters" id="filters" role="group" aria-label="Filtrar por serviço"></div>
+ <div class="grid" id="works" aria-live="polite"></div>
+</div></section>
+
+<section id="faq" style="background:var(--bg)"><div class="wrap">
+ <h2 class="rv">Perguntas frequentes</h2><div id="faqList" style="max-width:780px"></div>
+</div></section>
+
+<section id="contactos"><div class="wrap">
+ <h2>Contactos</h2>
+ <div class="ct" id="ctGrid"></div>
+ <a class="btn btn-gold" id="mapBtn" target="_blank" rel="noopener" href="#">Como chegar</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="fg">
+  <div><h3>AUTENTIKA ANGOLA</h3><p>Documentos, legalização, assessoria migratória e relações públicas.</p></div>
+  <div><h3>Ligações</h3><ul><li><a href="#sobre">Sobre</a></li><li><a href="#trabalhos">Trabalhos</a></li><li><a href="#faq">Perguntas</a></li><li><a href="#contactos">Contactos</a></li></ul></div>
+  <div><h3>Serviços</h3><ul id="ftSvc"></ul></div>
+  <div><h3>Redes</h3><ul><li><a data-fb target="_blank" rel="noopener" href="#">Facebook</a></li><li><a data-ig target="_blank" rel="noopener" href="#">Instagram</a></li><li><a data-wa target="_blank" rel="noopener" href="#">WhatsApp</a></li></ul></div>
+ </div>
+ <p>© <span id="yr"></span> AUTENTIKA ANGOLA. Todos os direitos reservados.</p>
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dTitle">
+ <div class="dh"><h3 id="dTitle">Solicitar assistência</h3><button class="x" id="dClose" aria-label="Fechar">×</button></div>
+ <div class="bar"><i id="prog"></i></div>
+ <div class="fb" id="fb"></div>
+ <div class="ff"><button class="btn btn-line btn-sm" id="bBack" style="color:var(--blue)">Voltar</button><button class="btn btn-blue btn-sm" id="bNext">Continuar</button></div>
+</dialog>
+<dialog id="lb"><button class="x" onclick="this.parentNode.close()" aria-label="Fechar imagem" style="float:right">×</button><img alt=""><p></p></dialog>
+
+<script>
+/* ============ CONFIGURAÇÃO — edite aqui ============ */
+const CONFIG={
+ nome:'AUTENTIKA ANGOLA',
+ whatsapp:'244922998418',                 // NÚMERO DO WHATSAPP (só dígitos, com indicativo)
+ telefone:'+244 922 998 418',
+ facebook:'https://www.facebook.com/profile.php?id=61587430528414',   // LINKS SOCIAIS
+ instagram:'https://www.instagram.com/autentika_angola/',
+ morada:'Marginal de Luanda, Largo do Baleizão, ao lado do Shopping Fortaleza, Luanda, Angola', // ENDEREÇO
+ logo:'logo-autentika.jpg'                   // LOGÓTIPO: caminho da imagem
+};
+const SIM_NAO=['Sim','Não','Não sei'];
+/* SERVIÇOS E PERGUNTAS DO FORMULÁRIO — edite, acrescente ou remova.
+   tipos: text | textarea | select (com options). required:true = obrigatório */
+const SERVICES=[
+ {id:'emissao',title:'Emissão de documentos',icon:'M7 3h8l4 4v14H7zM15 3v4h4M10 12h6M10 16h6',
+  desc:'Apoio no pedido e acompanhamento da emissão de documentos.',
+  q:[{k:'Tipo de documento',t:'text',required:true},{k:'Finalidade',t:'text',required:true},
+     {k:'Situação do pedido',t:'select',options:['Ainda não iniciei','Já iniciei','Preciso de segunda via','Outra'],required:true},
+     {k:'Fase atual do processo',t:'text'},{k:'Prazo, se existir',t:'text'}]},
+ {id:'legalizacao',title:'Legalização e reconhecimento de documentos',icon:'M12 3l8 3v6c0 5-3.5 8-8 9-4.500-1-8-4-8-9V6zM8.500 12l2.500 2.500 4.500-5',
+  desc:'Orientação para legalizar e reconhecer documentos para uso em Angola ou no estrangeiro.',
+  q:[{k:'Tipo de documento',t:'text',required:true},{k:'País de origem',t:'text',required:true},
+     {k:'País ou instituição de destino',t:'text',required:true},
+     {k:'Estado do documento',t:'select',options:['Original','Cópia','Já traduzido','Já legalizado em parte','Não sei'],required:true},
+     {k:'Assistência pretendida',t:'textarea',required:true}]},
+ {id:'migratoria',title:'Assessoria migratória',icon:'M3 12l18-8-6 17-3-7zM12 14l9-10',
+  desc:'Esclarecimentos e acompanhamento em questões migratórias.',
+  q:[{k:'Objetivo da solicitação',t:'text',required:true},{k:'País de destino',t:'text',required:true},
+     {k:'Fase do processo',t:'select',options:['Ainda a informar-me','Reuni documentos','Processo em curso','Pedido recusado ou pendente'],required:true},
+     {k:'Prazo relevante',t:'text'},{k:'Esclarecimentos pretendidos',t:'textarea'}]},
+ {id:'rp',title:'Relações públicas',icon:'M4 5h16v11H9l-5 4zM8 9h8M8 12h5',
+  desc:'Apoio na comunicação e no contacto com entidades e instituições.',
+  q:[{k:'Assunto',t:'text',required:true},{k:'Tipo de assistência',t:'text',required:true},
+     {k:'Entidade envolvida (se aplicável)',t:'text'},{k:'Resultado pretendido',t:'textarea',required:true}]},
+ {id:'empresas',title:'Apoio documental para empresas',icon:'M4 21V7l8-4 8 4v14M9 21v-6h6v6M9 10h.01M15 10h.01',
+  desc:'Suporte documental para empresas, com vários processos em simultâneo.',
+  q:[{k:'Empresa',t:'text',required:true},{k:'Setor de atividade',t:'text',required:true},
+     {k:'Tipo de apoio documental',t:'text',required:true},{k:'Quantidade aproximada de processos',t:'text'},
+     {k:'Contacto responsável (nome)',t:'text',required:true}]}
+];
+/* TRABALHOS REALIZADOS — GALERIA CONTROLADA PELO PROGRAMADOR.
+   Os visitantes apenas podem ver/ampliar as fotografias; não existe opção de carregamento.
+   1) Crie a pasta assets/trabalhos/ dentro da pasta do site.
+   2) Coloque nessa pasta cada fotografia real, por exemplo: legalizacao-1.jpg.
+   3) Acrescente uma entrada por fotografia, separando entradas com vírgulas.
+   'cat' tem de ser um dos IDs: emissao, legalizacao, migratoria, rp, empresas.
+   Exemplo de entrada (remova os comentários // ao usar):
+   {cat:'legalizacao',img:'assets/trabalhos/legalizacao-1.jpg',alt:'Documento legalizado',title:'Legalização de documentos',desc:'Trabalho realizado pela equipa.'}
+   IMPORTANTE: publique/carregue também as imagens e a pasta assets/trabalhos/ para ficarem visíveis online.
+   Se a lista estiver vazia, a galeria apresenta uma mensagem em vez de inventar trabalhos. */
+const WORKS=[
+   {cat:'legalizacao',img:'1793046097488.jpg',alt:'Documento legalizado',title:'Legalização de documentos',desc:'Trabalho realizado pela equipa.'},
+  {cat:'emissao',img:'1793046103893.jpg',alt:'Documentos Emitidos',title:'Emissão de documentos',desc:'Trabalho realizado pela equipa.'},
+   {cat:'migratoria',img:'1793046131931.jpg',alt:'Documento migratorio',title:' Documento Emitido ',desc:'Trabalho realizado pela equipa.'},
+   {cat:'rp',img:'1793046109378.jpg',alt:'Relações públicas',title:'Documento Legalizado pelo MIREX ',desc:'Trabalho realizado pela equipa.'},
+   {cat:'empresas',img:'1793046103893.jpg',alt:'Empresa Legalizada',title:' Documento  da empresa Legalizado ',desc:'Trabalho realizado pela equipa.'},
+];
+
+/* PERGUNTAS FREQUENTES — baseadas apenas em informação confirmada */
+const FAQ=[
+ ['Que serviços oferece a AUTENTIKA ANGOLA?','Emissão de documentos, legalização e reconhecimento de documentos, assessoria migratória, relações públicas e apoio documental para empresas.'],
+ ['Como posso pedir assistência?','Escolha o serviço, responda ao questionário e reveja o resumo. Depois abre-se o WhatsApp oficial da empresa com a mensagem pronta. Ainda terá de confirmar o envio dentro da aplicação.'],
+ ['Onde fica a empresa?','Marginal de Luanda, Largo do Baleizão, ao lado do Shopping Fortaleza, Luanda, Angola.'],
+ ['Como posso contactar a empresa?','Pelo telefone ou WhatsApp +244 922 998 418, ou pelas páginas oficiais de Facebook e Instagram.'],
+ ['Preciso de enviar documentos pelo formulário?','Não. Não pedimos números de BI, passaportes, dados bancários nem cópias de documentos nesta fase. Os detalhes seguem-se na conversa com a equipa.']
+];
+/* ===================================================== */
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const svgIco=p=>`<div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${p}"/></svg></div>`;
+const waLink=t=>`https://wa.me/${CONFIG.whatsapp}`+(t?`?text=${encodeURIComponent(t)}`:'');
+const el=(tag,props={},kids=[])=>{const e=document.createElement(tag);Object.assign(e,props);kids.forEach(k=>e.append(k));return e};
+
+/* dados fixos */
+$('#logo').src=CONFIG.logo;$('#logo').onerror=function(){this.style.display='none'};
+$$('[data-wa]').forEach(a=>a.href=waLink('Olá! Gostaria de pedir assistência à AUTENTIKA ANGOLA.'));
+$('[data-fb]').href=CONFIG.facebook;$('[data-ig]').href=CONFIG.instagram;
+$('#aboutAddr').textContent=CONFIG.morada;$('#yr').textContent=new Date().getFullYear();
+$('#mapBtn').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(CONFIG.morada);
+$('#ctGrid').innerHTML=`<div><b>Telefone e WhatsApp</b><a href="tel:+244922998418">${CONFIG.telefone}</a></div>
+<div><b>Facebook</b><a target="_blank" rel="noopener" href="${CONFIG.facebook}">Página oficial</a></div>
+<div><b>Instagram</b><a target="_blank" rel="noopener" href="${CONFIG.instagram}">@autentika_angola</a></div>
+<div><b>Endereço</b>${CONFIG.morada}</div>`;
+$('#ftSvc').innerHTML=SERVICES.map(s=>`<li><a href="#servicos">${s.title}</a></li>`).join('');
+$('#faqList').innerHTML=FAQ.map(([q,a])=>`<details class="rv"><summary>${q}</summary><p>${a}</p></details>`).join('');
+
+/* serviços */
+const grid=$('#svcGrid');
+SERVICES.forEach((s,i)=>{
+ const c=el('article',{className:'card rv'});c.style.setProperty('--d',i*.08+'s');
+ c.innerHTML=`${svgIco(s.icon)}<h3>${s.title}</h3><p>${s.desc}</p><div class="acts"></div>`;
+ const more=el('button',{className:'btn btn-line btn-sm',textContent:'Saber mais'});
+ const req=el('button',{className:'btn btn-blue btn-sm',textContent:'Solicitar serviço'});
+ more.onclick=()=>{const p=$('p',c);p.textContent=p.dataset.open?s.desc:s.desc+' Responda ao questionário para indicar o seu caso; a equipa confirma depois se e como o pode tratar.';p.dataset.open=p.dataset.open?'':'1'};
+ req.onclick=()=>openForm(s.id);
+ $('.acts',c).append(more,req);grid.append(c);
+});
+
+/* galeria */
+let filtro='todos';
+const fWrap=$('#filters');
+[{id:'todos',title:'Todos'},...SERVICES].forEach(s=>{
+ const b=el('button',{className:'chip',textContent:s.id==='todos'?'Todos':s.title.split(' ').slice(0,2).join(' '),type:'button'});
+ b.setAttribute('aria-pressed',s.id==='todos');b.onclick=()=>{filtro=s.id;$$('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));drawWorks()};
+ fWrap.append(b);
+});
+function drawWorks(){
+ const box=$('#works');box.innerHTML='';
+ const list=WORKS.filter(w=>filtro==='todos'||w.cat===filtro);
+ if(!list.length){box.innerHTML=`<div class="empty" style="grid-column:1/-1">${WORKS.length?'Ainda não há fotografias nesta categoria.':'As fotografias dos trabalhos realizados serão adicionadas em breve.'}</div>`;return}
+ 
+ list.forEach(w=>{
+  const sv=SERVICES.find(s=>s.id===w.cat);
+  const c=el('article',{className:'card work'});
+  const th=el('button',{className:'th',type:'button'});th.setAttribute('aria-label','Ampliar: '+w.title);
+  th.append(el('img',{src:w.img,alt:w.alt||w.title,loading:'lazy'}));
+  th.onclick=()=>{const d=$('#lb');$('img',d).src=w.img;$('img',d).alt=w.alt||w.title;$('p',d).textContent=w.title;d.showModal()};
+  const bd=el('div',{className:'bd'});
+  bd.innerHTML=`<span class="tag">${sv.title}</span><h3>${w.title}</h3><p>${w.desc||''}</p>`;
+  const b=el('button',{className:'btn btn-blue btn-sm',textContent:'Solicitar serviço semelhante'});b.onclick=()=>openForm(w.cat);
+  bd.append(b);c.append(th,bd);box.append(c);
+ });
+}
+drawWorks();
+
+/* formulário em etapas */
+const dlg=$('#dlg'),fb=$('#fb');
+let st=null;
+function openForm(id){
+ st={svc:id||null,step:id?1:0,ans:{},ct:{}};
+ dlg.showModal();render();
+}
+$$('[data-open]').forEach(b=>b.onclick=()=>openForm());
+$('#dClose').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+const svc=()=>SERVICES.find(s=>s.id===st.svc);
+function field(q,i,val,pre){
+ const id=pre+i,w=el('div',{className:'fld'});
+ w.append(el('label',{htmlFor:id,innerHTML:q.k+(q.required?'':' <span class="opt">(opcional)</span>')}));
+ let f;
+ if(q.t==='select'){f=el('select',{id});f.append(el('option',{value:'',textContent:'Selecione'}));q.options.forEach(o=>f.append(el('option',{value:o,textContent:o})))}
+ else if(q.t==='textarea'){f=el('textarea',{id,rows:3})}
+ else{f=el('input',{id,type:q.t==='tel'?'tel':q.t==='email'?'email':'text'});if(q.t==='tel')f.inputMode='tel'}
+ f.value=val||'';f.name=q.k;if(q.required)f.required=true;
+ f.setAttribute('aria-describedby',id+'e');
+ w.append(f,el('div',{className:'err',id:id+'e'}));return w;
+}
+const CONTACT=[{k:'Nome completo',t:'text',required:true},{k:'Telefone ou WhatsApp',t:'tel',required:true},
+ {k:'E-mail',t:'email'},{k:'Município ou localização',t:'text'},{k:'Observações adicionais',t:'textarea'}];
+function steps(){return st.svc?3:4}
+function render(){
+ fb.innerHTML='';const s=el('div',{className:'step'});
+ const total=st.svc?3:4,cur=st.svc?st.step:st.step+1; // etapas: [serviço], perguntas, contacto, resumo
+ $('#prog').style.width=(cur/total*100)+'%';
+ $('#dTitle').textContent=st.svc?svc().title:'Solicitar assistência';
+ const stage=st.svc?['','q','c','r'][st.step]:['s','q','c','r'][st.step];
+ if(stage==='s'){
+  s.append(el('p',{className:'lead',textContent:'Que serviço pretende?',style:'margin-bottom:12px'}));
+  SERVICES.forEach(v=>{const b=el('button',{className:'btn btn-line',textContent:v.title,type:'button',style:'width:100%;margin-bottom:8px;color:var(--blue);text-align:left;justify-content:flex-start'});
+   b.onclick=()=>{st.svc=v.id;st.step=1;render()};s.append(b)});
+ }
+ if(stage==='q'){svc().q.forEach((q,i)=>s.append(field(q,i,st.ans[q.k],'q')))}
+ if(stage==='c'){
+  s.append(el('p',{textContent:'Não pedimos BI, passaporte, dados bancários nem cópias de documentos.',className:'note',style:'margin:0 0 16px'}));
+  CONTACT.forEach((q,i)=>s.append(field(q,i,st.ct[q.k],'c')))}
+ if(stage==='r'){
+  const dl=el('dl',{className:'sum'});
+  const add=(k,v)=>{if(v){dl.append(el('dt',{textContent:k}),el('dd',{textContent:v}))}};
+  add('Serviço',svc().title);svc().q.forEach(q=>add(q.k,st.ans[q.k]));CONTACT.forEach(q=>add(q.k,st.ct[q.k]));
+  s.append(dl,el('p',{className:'note',textContent:'Ao abrir o WhatsApp, a mensagem fica pronta, mas só é enviada quando confirmar dentro da aplicação. O pedido vai sempre para o número oficial da AUTENTIKA ANGOLA.'}));
+ }
+ fb.append(s);fb.scrollTop=0;
+ st.stage=stage;
+ $('#bBack').style.visibility=(stage==='s'||(st.svc&&stage==='q'&&false))?'hidden':'visible';
+ $('#bNext').style.display=stage==='s'?'none':'';
+ $('#bNext').textContent=stage==='r'?'Enviar pedido pelo WhatsApp':'Continuar';
+ $('#bNext').className=stage==='r'?'btn btn-wa btn-sm':'btn btn-blue btn-sm';
+ const f=$('input,select,textarea',s);if(f&&matchMedia('(pointer:fine)').matches)f.focus();
+}
+function collect(map,list,pre){
+ let ok=true;
+ list.forEach((q,i)=>{
+  const f=$('#'+pre+i),e=$('#'+pre+i+'e');if(!f)return;
+  const v=f.value.trim();let m='';
+  if(q.required&&!v)m='Preencha este campo.';
+  else if(q.t==='tel'&&v&&!/^[+()\d\s-]{7,}$/.test(v))m='Indique um número de telefone válido.';
+  else if(q.t==='email'&&v&&!/^\S+@\S+\.\S+$/.test(v))m='Indique um e-mail válido.';
+  e.textContent=m;f.setAttribute('aria-invalid',!!m);if(m)ok=false;
+  map[q.k]=v; // as respostas ficam apenas em memória; nada é guardado no navegador
+ });
+ return ok;
+}
+$('#bNext').onclick=()=>{
+ if(st.stage==='q'){if(!collect(st.ans,svc().q,'q')){$('[aria-invalid=true]',fb).focus();return}}
+ if(st.stage==='c'){if(!collect(st.ct,CONTACT,'c')){$('[aria-invalid=true]',fb).focus();return}}
+ if(st.stage==='r'){window.open(buildMsg(),'_blank','noopener');return}
+ st.step++;render();
+};
+$('#bBack').onclick=()=>{
+ if(st.stage==='q'||st.stage==='c'){collect(st.stage==='q'?st.ans:st.ct,st.stage==='q'?svc().q:CONTACT,st.stage==='q'?'q':'c')}
+ if(st.stage==='q'&&st.svc&&st.step===1){st.svc=null;st.step=0}else st.step--;
+ render();
+};
+function buildMsg(){
+ const L=['NOVO PEDIDO — '+CONFIG.nome,'','Serviço: '+svc().title,'','Nome: '+st.ct['Nome completo'],'Contacto: '+st.ct['Telefone ou WhatsApp']];
+ if(st.ct['E-mail'])L.push('E-mail: '+st.ct['E-mail']);
+ if(st.ct['Município ou localização'])L.push('Localização: '+st.ct['Município ou localização']);
+ L.push('','RESPOSTAS DO QUESTIONÁRIO');
+ svc().q.forEach(q=>{if(st.ans[q.k])L.push(q.k+': '+st.ans[q.k])});
+ if(st.ct['Observações adicionais'])L.push('','Observações: '+st.ct['Observações adicionais']);
+ L.push('','Origem: Website da '+CONFIG.nome+'.');
+ return waLink(L.join('\n')); // destinatário sempre o número oficial
+}
+
+/* menu móvel, cabeçalho, revelação */
+const burger=$('#burger'),menu=$('#menu');
+burger.onclick=()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)};
+$$('#menu a').forEach(a=>a.onclick=()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)});
+addEventListener('scroll',()=>$('#hdr').classList.toggle('scrolled',scrollY>10),{passive:true});
+const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12}):null;
+$$('.rv').forEach(n=>io?io.observe(n):n.classList.add('in'));
+</script>
+</body>
+</html>
